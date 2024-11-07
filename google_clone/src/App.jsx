@@ -10,14 +10,14 @@ function App() {
       <nav>
         <li>
           <ul>
-            <Link to="/">Home</Link>
+            <Link to="/GoogleLiteH">Home</Link>
           </ul>
 
           <ul>
-            <Link to="/images">Images</Link>
+            <Link to="/GoogleLiteH/images">Images</Link>
           </ul>
           <ul>
-            <Link to="/advanced-search">Advanced Search</Link>
+            <Link to="/GoogleLiteH/advanced-search">Advanced Search</Link>
           </ul>
         </li>
       </nav>
