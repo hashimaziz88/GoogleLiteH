@@ -8,23 +8,9 @@ import { StickyNavbar } from "./components/Navbar";
 
 function App() {
   return (
-    <div className="app">
-      <div>
-        <StickyNavbar />
-      </div>
+    <div>
       <nav>
-        <li>
-          <ul>
-            <Link to="/GoogleLiteH">Home</Link>
-          </ul>
-
-          <ul>
-            <Link to="/GoogleLiteH/images">Images</Link>
-          </ul>
-          <ul>
-            <Link to="/GoogleLiteH/advanced-search">Advanced Search</Link>
-          </ul>
-        </li>
+        <StickyNavbar />
       </nav>
       <div>
         <Routes>

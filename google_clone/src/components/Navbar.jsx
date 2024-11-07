@@ -1,8 +1,8 @@
 import React from "react";
-import { Navbar, Typography, Button } from "@material-tailwind/react";
+import { Typography, Button, IconButton } from "@material-tailwind/react";
 import "./style/Navbar.css";
 import { Link } from "react-router-dom";
-
+import { AiOutlineAppstore } from "react-icons/ai"; // Import Google Apps icon
 export function StickyNavbar() {
   const navList = (
     <ul className="flex gap-6 items-center">
@@ -38,9 +38,15 @@ export function StickyNavbar() {
         color="white"
         className="p-1 font-normal"
       >
-        <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
-          <Button size="sm" fullWidth></Button>
-          <Button variant="outlined" size="sm" fullWidth>
+        <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden bg-transparent ">
+          <IconButton
+            className="text-white text-lg hover:bg-gray-700 p-1"
+            aria-label="Google Apps"
+            size="m"
+          >
+            <AiOutlineAppstore />
+          </IconButton>
+          <Button variant="outlined" size="l" fullWidth fullHeight>
             Log In
           </Button>
         </div>
@@ -50,20 +56,14 @@ export function StickyNavbar() {
 
   return (
     <div className="-m-6 max-h-[768px] w-[calc(100%+48px)] overflow-scroll">
-      <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-4 py-2 bg-inherit border-none">
+      <nav>
         <div className="flex items-center justify-between text-white-900">
-          <Typography
-            as="a"
-            href="#"
-            className="mr-4 cursor-pointer py-1.5 font-medium"
-          >
-            Google Clone
-          </Typography>
+          <Link to="/GoogleLiteH">Google Clone</Link>
           <div className="flex items-center gap-4">
             <div>{navList}</div>
           </div>
         </div>
-      </Navbar>
+      </nav>
     </div>
   );
 }
