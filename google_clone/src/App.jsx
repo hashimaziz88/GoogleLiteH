@@ -8,7 +8,7 @@ import { StickyNavbar } from "./components/Navbar";
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <nav>
         <StickyNavbar />
       </nav>

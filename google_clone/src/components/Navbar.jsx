@@ -5,33 +5,14 @@ import { Link } from "react-router-dom";
 import { AiOutlineAppstore } from "react-icons/ai"; // Import Google Apps icon
 export function StickyNavbar() {
   const navList = (
-    <ul className="flex gap-6 items-center">
-      <Typography
-        as="li"
-        variant="small"
-        color="white"
-        className="p-1 font-normal"
-      >
+    <ul className="flex items-center">
+      <div className="spaces">
         <Link to="/GoogleLiteH/advanced-search">Advanced Search</Link>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="white"
-        className="p-1 font-normal"
-      >
+      </div>
+      <div className="spaces">
         <Link to="/GoogleLiteH/images">Images</Link>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="white"
-        className="p-1 font-normal"
-      >
-        <a href="#" className="flex items-center">
-          Docs
-        </a>
-      </Typography>
+      </div>
+
       <Typography
         as="li"
         variant="small"
@@ -42,7 +23,7 @@ export function StickyNavbar() {
           <IconButton
             className="text-white text-lg hover:bg-gray-700 p-1"
             aria-label="Google Apps"
-            size="m"
+            size="xl"
           >
             <AiOutlineAppstore />
           </IconButton>

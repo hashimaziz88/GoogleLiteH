@@ -5,3 +5,7 @@ Navbar {
   border: none;
   outline-color: #202124;
 }
+
+.spaces {
+  padding: 10px;
+}
