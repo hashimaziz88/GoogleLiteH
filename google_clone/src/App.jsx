@@ -22,9 +22,13 @@ function App() {
         </li>
       </nav>
       <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/images" element={<Images />} />
-        <Route exact path="/advanced-search" element={<Advanced />} />
+        <Route exact path="/GoogleLiteH" element={<Home />} />
+        <Route exact path="/GoogleLiteH/images" element={<Images />} />
+        <Route
+          exact
+          path="/GoogleLiteH/advanced-search"
+          element={<Advanced />}
+        />
       </Routes>
     </div>
   );
