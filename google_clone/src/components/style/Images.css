@@ -1,0 +1,23 @@
+.container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  align-content: center;
+}
+
+.imagespan {
+  color: #4487f6;
+  font: 16px / 16px Arial, sans-serif;
+  position: absolute;
+  left: 215px;
+  bottom: 0;
+  white-space: nowrap;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  align-content: center;
+  padding: 20px;
+}
